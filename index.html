@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rafael Santos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/apps.css">
+    <link rel="stylesheet" href="CSS/search.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon-2.png">
 </head>
+
 <body>
-    <h1>Welcome to My Landing Page!</h1>
-    <p>This is my GitHub Pages site.</p>
-    <script src="script.js"></script>
+    <div id="page">
+        <div id="hero">
+            <div class="hero-photo">
+                <!-- Replace 'path/to/photo.jpg' with the actual image path -->
+                <img src="Images/rafael.jpg" alt="Profile Photo">
+            </div>
+            <div class="hero-info">
+                <a href='https://linktr.ee/rafaeldcsantos' class="hero-link"><p class="hero-name">Rafael Santos</p></a>
+                <p class="hero-bio">I work at <a href="http://www.inpe.br">INPE</a>.</p>
+                <p class="hero-bio">I code for educational purposes and for fun.</p>
+                <!-- Add more paragraphs or content as needed -->
+            </div>
+        </div>
+
+        <div class="searchContainer">
+            <input type="text" id="searchInput" placeholder="Filter contents.">
+        </div>
+
+        <div class='appcontainer'>
+            <!-- -------------------------------------- -->
+            <a href="https://rafaeldcsantos.github.io/SharingNotebooks/Intro.html" class="card">
+                <div class="card-image">
+                    <img src="Images/SharingNotebooks.jpg" alt="Sharing Notebooks">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Sharing Notebooks</h2>
+                            <p>How to create a Quarto-based notebook using Visual Studio Code and share it in GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-en.svg" alt="Country Flag" class="card-flag">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="https://rafaeldcsantos.github.io/CAPESData/" class="card">
+                <div class="card-image">
+                    <img src="Images/CAPESData.jpg" alt="CAPESData">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>CAPESData</h2>
+                            <p>Código para processar dados da CAPES, de interesse de coordenadores de programas de pós-graduação e gestores.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-ptbr.svg" alt="Country Flag" class="card-flag">
+            </a>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="JS/appsearchbar.js"></script>
+
 </body>
+
 </html>

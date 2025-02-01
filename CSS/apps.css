@@ -1,0 +1,101 @@
+/* ---------------------------------------------------
+   Container for the application cards
+   --------------------------------------------------- */
+   .appcontainer {
+    display: grid;                         /* Use grid layout */
+    grid-gap: 10px;                        /* Gap between grid items */
+    grid-template-columns: repeat(4, 1fr);   /* Four equal-width columns */
+    justify-items: center;                 /* Center each card within its cell */
+    width: 1056px;                         /* Fixed container width; adjust as needed */
+    margin: 0 auto;                        /* Center container horizontally */
+    margin-top: -20px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+  }
+  
+/* ---------------------------------------------------
+   Card Container: the clickable button
+   --------------------------------------------------- */
+   .card {
+    display: block;                         /* Makes the link a block element */
+    width: 256px;     
+    height: 180px;                      /* Fixed width for uniformity */
+    border: 1px solid #000;                 /* Card border */
+    border-radius: 3px;                     /* Rounded corners */
+    overflow: hidden;                       /* Ensures child elements don't overflow */
+    text-decoration: none;                  /* Remove default link styling */
+    color: #000;                            /* Default text color */
+    position: relative;                     /* For absolutely positioned flag */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  }
+  
+  /* ---------------------------------------------------
+     Card Image Container
+     --------------------------------------------------- */
+  .card-image {
+    position: relative;                     /* Establish positioning for the overlay */
+  }
+  
+  /* Main image style: fixed height and full width */
+  .card-image img {
+    display: block;
+    width: 100%;                            /* Fill the card's width */
+    object-fit: cover;                      /* Ensures the image covers the container without distortion */
+  }
+  
+  /* ---------------------------------------------------
+     Gradient & Text Overlay
+     --------------------------------------------------- */
+  .card-gradient {
+    position: absolute;                     /* Overlay on top of the image */
+    bottom: 0;                              /* Align to the bottom of the image */
+    left: 0;
+    right: 0;
+    height: 100px;                           /* Height of the overlay area (adjust as needed) */
+    background: linear-gradient(to top, rgba(136, 183, 233,0.5), rgb(255, 255, 255));   
+    /* This gradient fades from solid white at the bottom to transparent at the top */
+    
+    /* Optional: use flex to center the text vertically and add some padding */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Text styling inside the overlay */
+  .card-text h2 {
+    margin: 0;
+    font-size: 1em;
+    color: #000;
+  }
+  
+  .card-text p {
+    margin: 2px 0 0;
+    font-size: 0.8em;
+    color: #333;
+  }
+  
+  /* ---------------------------------------------------
+     Flag Icon: small flag with a shadow in the corner
+     --------------------------------------------------- */
+  .card-flag {
+    position: absolute;                     /* Positioned relative to the card */
+    top: 5px;                               /* 5px from the top */
+    right: 5px;                             /* 5px from the right */
+    width: 32px;                            /* Fixed width */
+    height: auto;                           /* Maintain aspect ratio */
+    border: 1px solid #000;                 /* Border for definition */
+    border-radius: 50%;                     /* Circular shape */
+    background-color: #fff;                 /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    z-index: 2;                             /* Ensure the flag appears on top */
+  }
+  
+  /* ---------------------------------------------------
+     Hover Effect: lifts the card and adds a shadow
+     --------------------------------------------------- */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  

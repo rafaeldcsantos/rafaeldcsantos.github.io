@@ -1,0 +1,13 @@
+When starting from scratch (with the repo in GitHub but no local files)
+mkdir LandingPage
+git clone https://github.com/rafaeldcsantos/rafaeldcsantos.github.io.git LandingPage
+cd LandingPage
+
+Do the changes and test locally.
+
+git add .
+git commit -m "Update landing page content"
+git push origin main
+
+If git push asks for a password to this and repeat the push:
+git remote set-url origin git@github.com:rafaeldcsantos/rafaeldcsantos.github.io.git

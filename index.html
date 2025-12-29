@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,72 +7,135 @@
     <title>Rafael Santos</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/apps.css">
-    <link rel="stylesheet" href="CSS/search.css">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="Images/favicon-2.png">
 </head>
 
 <body>
     <div id="page">
-        <div id="hero">
-            <div class="hero-photo">
-                <!-- Replace 'path/to/photo.jpg' with the actual image path -->
-                <img src="Images/rafael.jpg" alt="Profile Photo">
+        <header id="hero">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Dados · Cödigo · Educação · Curiosidades</p>
+                <h1 class="hero-name">Rafael Santos</h1>
+                <p class="hero-bio">Eu trabalho no <a href="http://www.inpe.br">INPE</a>. Veja meus <a href="https://linktr.ee/rafaeldcsantos">contatos e outros links</a>.</p>
+                <p class="hero-bio">Aqui você encontra código para análise de dados de diversas fontes, <i>links</i> para projetos, material educacional e mais.</p>
             </div>
-            <div class="hero-info">
-                <a href='https://linktr.ee/rafaeldcsantos' class="hero-link"><p class="hero-name">Rafael Santos</p></a>
-                <p class="hero-bio">I work at <a href="http://www.inpe.br">INPE</a>.</p>
-                <p class="hero-bio">I code for educational purposes and for fun.</p>
-                <!-- Add more paragraphs or content as needed -->
-            </div>
-        </div>
+            <figure class="hero-photo">
+                <img src="Images/rafael.jpg" alt="Rafael Santos" width="150" height="150">
+            </figure>
+        </header>
 
-        <div class="searchContainer">
-            <input type="text" id="searchInput" placeholder="Filter contents.">
-        </div>
+        <main>
+            <section class="tabs" aria-label="Coleções de cards">
+                <div class="tab-list" role="tablist">
+                    <button class="tab-button is-active" role="tab" aria-selected="true" aria-controls="tab-ensino" id="tab-ensino-button" data-tab-target="tab-ensino">Ensino</button>
+                    <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-extensao" id="tab-extensao-button" data-tab-target="tab-extensao">Extensão</button>
+                    <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-dados" id="tab-dados-button" data-tab-target="tab-dados">Dados Abertos</button>
+                    <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-outros" id="tab-outros-button" data-tab-target="tab-outros">Outros</button>
+                </div>
 
-        <div class='appcontainer'>
-            <!-- -------------------------------------- -->
-            <a href="https://rafaeldcsantos.github.io/SharingNotebooks/Intro.html" class="card">
-                <div class="card-image">
-                    <img src="Images/SharingNotebooks.jpg" alt="Sharing Notebooks">
-                    <div class="card-gradient">
-                        <div class="card-text">
-                            <h2>Sharing Notebooks</h2>
-                            <p>How to create a Quarto-based notebook using Visual Studio Code and share it in GitHub</p>
-                        </div>
+<!-- #######                               
+     #       #    #  ####  # #    #  ####  
+     #       ##   # #      # ##   # #    # 
+     #####   # #  #  ####  # # #  # #    # 
+     #       #  # #      # # #  # # #    # 
+     #       #   ## #    # # #   ## #    # 
+     ####### #    #  ####  # #    #  ####   -->
+
+
+                <div class="tab-panel is-active" id="tab-ensino" role="tabpanel" aria-labelledby="tab-ensino-button">
+                    <div class="appcontainer">
+                        <!-- -------------------------------------- -->
+                        <a href="https://rafaeldcsantos.github.io/PGCAP-Extensao/" class="card">
+                            <div class="card-image">
+                                <img src="Images/CAP-51X.jpg" alt="Extensão em Computação Aplicada e Tecnologias Digitais" width="256" height="144">
+                                <div class="card-gradient">
+                                    <div class="card-text">
+                                        <h2>Extensão em Computação Aplicada e Tecnologias Digitais</h2>
+                                        <p>Disciplina na PGCAP/INPE.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+                        </a>
+
+                        <!-- -------------------------------------- -->
+                        <a href="https://rafaeldcsantos.github.io/SharingNotebooks/Intro.html" class="card">
+                            <div class="card-image">
+                                <img src="Images/SharingNotebooks.jpg" alt="Sharing Notebooks" width="256" height="144">
+                                <div class="card-gradient">
+                                    <div class="card-text">
+                                        <h2>Sharing Notebooks</h2>
+                                        <p>How to create a Quarto notebook with VS Code and publish it on GitHub</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/flag-en.svg" alt="United Kingdom flag" class="card-flag" width="32" height="32">
+                        </a>
+
+
                     </div>
                 </div>
-                <img src="Images/flag-en.svg" alt="Country Flag" class="card-flag">
-            </a>
 
-            <!-- -------------------------------------- -->
-            <a href="https://rafaeldcsantos.github.io/CAPESData/" class="card">
-                <div class="card-image">
-                    <img src="Images/CAPESData.jpg" alt="CAPESData">
-                    <div class="card-gradient">
-                        <div class="card-text">
-                            <h2>CAPESData</h2>
-                            <p>Código para processar dados da CAPES, de interesse de coordenadores de programas de pós-graduação e gestores.</p>
-                        </div>
+<!-- #######                                                 
+     #       #    # ##### ###### #    #  ####    ##    ####  
+     #        #  #    #   #      ##   # #       #  #  #    # 
+     #####     ##     #   #####  # #  #  ####  #    # #    # 
+     #         ##     #   #      #  # #      # ###### #    # 
+     #        #  #    #   #      #   ## #    # #    # #    # 
+     ####### #    #   #   ###### #    #  ####  #    #  ####   -->
+
+
+                <div class="tab-panel" id="tab-extensao" role="tabpanel" aria-labelledby="tab-extensao-button">
+                    <div class="appcontainer">
                     </div>
                 </div>
-                <img src="Images/flag-ptbr.svg" alt="Country Flag" class="card-flag">
-            </a>
 
 
+<!-- ######                              
+     #     #   ##   #####   ####   ####  
+     #     #  #  #  #    # #    # #      
+     #     # #    # #    # #    #  ####  
+     #     # ###### #    # #    #      # 
+     #     # #    # #    # #    # #    # 
+     ######  #    # #####   ####   ####   -->
+
+                <div class="tab-panel" id="tab-dados" role="tabpanel" aria-labelledby="tab-dados-button">
+                    <div class="appcontainer">
+                        <!-- -------------------------------------- -->
+                        <a href="https://rafaeldcsantos.github.io/CAPESData/" class="card">
+                            <div class="card-image">
+                                <img src="Images/CAPESData.jpg" alt="CAPESData" width="256" height="180">
+                                <div class="card-gradient">
+                                    <div class="card-text">
+                                        <h2>CAPESData</h2>
+                                        <p>Código para processar dados da CAPES, de interesse de coordenadores de programas de pós-graduação e gestores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+                        </a>
+                    </div>
+                </div>
+
+<!-- #######                                   
+     #     # #    # ##### #####   ####   ####  
+     #     # #    #   #   #    # #    # #      
+     #     # #    #   #   #    # #    #  ####  
+     #     # #    #   #   #####  #    #      # 
+     #     # #    #   #   #   #  #    # #    # 
+     #######  ####    #   #    #  ####   ####   -->
 
 
+                <div class="tab-panel" id="tab-outros" role="tabpanel" aria-labelledby="tab-outros-button">
+                    <div class="appcontainer">
 
-
-        </div>
-
-
-
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-
-    <script src="JS/appsearchbar.js"></script>
-
+    <script src="JS/tabs.js" defer></script>
 </body>
 
 </html>

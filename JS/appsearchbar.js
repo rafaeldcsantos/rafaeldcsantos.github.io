@@ -1,19 +1,19 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
- */
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('searchInput');
+  if (!searchInput) return;
 
+  const cards = Array.from(document.querySelectorAll('.appcontainer .card'));
 
-  document.getElementById('searchInput').addEventListener('input', function () {
-    const filter = this.value.toLowerCase();
-    const appIcons = document.querySelectorAll('.appcontainer a');
-
-    appIcons.forEach((icon) => {
-      const text = icon.textContent.toLowerCase();
-      if (text.includes(filter)) {
-        icon.style.display = 'flex'; // Show matching items
-      } else {
-        icon.style.display = 'none'; // Hide non-matching items
-      }
+  const filterCards = (query) => {
+    const term = query.trim().toLowerCase();
+    cards.forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      const matches = !term || text.includes(term);
+      card.classList.toggle('is-hidden', !matches);
     });
+  };
+
+  searchInput.addEventListener('input', (event) => {
+    filterCards(event.target.value);
   });
+});

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Santos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/apps.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon-2.png">
+</head>
+
+<body>
+    <div id="page">
+        <header id="hero">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Dados · Cödigo · Educação · Curiosidades</p>
+                <h1 class="hero-name">Rafael Santos</h1>
+                <p class="hero-bio">Eu trabalho no <a href="http://www.inpe.br">INPE</a>. Veja meus <a href="https://linktr.ee/rafaeldcsantos">contatos e outros links</a>.</p>
+                <p class="hero-bio">Aqui você encontra código para análise de dados de diversas fontes, <i>links</i> para projetos, material educacional e mais.</p>
+            </div>
+            <figure class="hero-photo">
+                <img src="Images/rafael.jpg" alt="Rafael Santos" width="150" height="150">
+            </figure>
+        </header>
+
+        <section class="search-shell" aria-label="Buscar cards">
+            <label class="sr-only" for="searchInput">Filtrar cards</label>
+            <div class="search-bar">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-5-5zm-6 0C8.01 14 6 11.99 6 9.5S8.01 5 10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z"></path>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Filtre por título ou descrição">
+            </div>
+        </section>
+
+        <main class="appcontainer">
+            <!-- -------------------------------------- -->
+            <a href="https://rafaeldcsantos.github.io/SharingNotebooks/Intro.html" class="card">
+                <div class="card-image">
+                    <img src="Images/SharingNotebooks.jpg" alt="Sharing Notebooks" width="256" height="192">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Sharing Notebooks</h2>
+                            <p>Como criar um notebook em Quarto usando Visual Studio Code e publicar no GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+            </a>
+
+
+
+
+            <!-- -------------------------------------- -->
+            <a href="https://rafaeldcsantos.github.io/SharingNotebooks/Intro.html" class="card">
+                <div class="card-image">
+                    <img src="Images/SharingNotebooks.jpg" alt="Sharing Notebooks" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Sharing Notebooks</h2>
+                            <p>Como criar um notebook em Quarto usando Visual Studio Code e publicar no GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-en.svg" alt="Bandeira inglesa" class="card-flag" width="32" height="32">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="https://rafaeldcsantos.github.io/CAPESData/" class="card">
+                <div class="card-image">
+                    <img src="Images/CAPESData.jpg" alt="CAPESData" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>CAPESData</h2>
+                            <p>Código para processar dados da CAPES, de interesse de coordenadores de programas de pós-graduação e gestores.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="#" class="card">
+                <div class="card-image">
+                    <img src="Images/SharingNotebooks.jpg" alt="Guia de Python" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Guia de Python</h2>
+                            <p>Resumo rápido de comandos e boas práticas para análise de dados.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="#" class="card">
+                <div class="card-image">
+                    <img src="Images/CAPESData.jpg" alt="Monitoramento Climático" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Monitoramento Climático</h2>
+                            <p>Dashboard com dados climáticos e satelitais para experimentos.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-ptbr.svg" alt="Bandeira do Brasil" class="card-flag" width="32" height="32">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="#" class="card">
+                <div class="card-image">
+                    <img src="Images/SharingNotebooks.jpg" alt="Notebook de Visualização" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Notebook de Visualização</h2>
+                            <p>Exemplos de gráficos interativos com bibliotecas Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-en.svg" alt="Bandeira inglesa" class="card-flag" width="32" height="32">
+            </a>
+
+            <!-- -------------------------------------- -->
+            <a href="#" class="card">
+                <div class="card-image">
+                    <img src="Images/CAPESData.jpg" alt="Checklist de Deploy" width="256" height="180">
+                    <div class="card-gradient">
+                        <div class="card-text">
+                            <h2>Checklist de Deploy</h2>
+                            <p>Passos essenciais para publicar notebooks e páginas estáticas.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Images/flag-en.svg" alt="Bandeira inglesa" class="card-flag" width="32" height="32">
+            </a>
+        </main>
+    </div>
+    <script src="JS/appsearchbar.js" defer></script>
+</body>
+
+</html>

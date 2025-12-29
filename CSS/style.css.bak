@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#page {
+    width: 1076px;
+    margin: 0 auto;
+    margin-top: 12px;
+    background-color: #ffffff;
+    border: 3px solid #0d7dbd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Hero Section Layout */
+#hero {
+    display: flex;
+    align-items: center; /* Vertically centers the photo and text */
+    margin-bottom: 10px; /* Spacing below the hero section  */
+  }
+  
+  /* Photo Container */
+  .hero-photo {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #0d7dbd; /* Adjust the border as needed */
+    border-radius: 45%;       /* Creates the circular shape */
+    overflow: hidden;         /* Ensures the image is cropped to the circle */
+    flex-shrink: 0;           /* Prevents the image container from shrinking */
+  }
+  
+  /* Image Styling */
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* Ensures the image covers the container without distortion */
+  }
+
+  .hero-name, .hero-bio {
+    text-align: left;
+  }
+  
+  /* Hero Information (Text) */
+  .hero-info {
+    margin-left: 20px;        /* Space between the photo and the text */
+  }
+  
+  /* Name Styling */
+  .hero-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;                /* Remove default margins */
+  }
+  
+  /* Bio Styling */
+  .hero-bio {
+    font-size: 1em;
+    color: #333;              /* Adjust the color as desired */
+    margin: 5px 0;            /* Some spacing between paragraphs */
+  }
+
+  .hero-link {
+    text-decoration: none;
+  }
